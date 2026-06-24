@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UploadAssetFile</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+         <div class = "userinfo" id = "userinfo">
+            <span id = "userdata">Welcome user</span>
+            <a href = "C:\Users\GOPI\Documents\workspace-spring-tools-for-eclipse\inventory-my project\AssetInventory\src\main\resources\static\index.html" class="logout">Logout</a>
+        </div>
+        <div class = "menu" id = "menu">
+            <button id = "addasset" onclick="menuitemview(event)">Add Asset Info</button>
+            <button id = "viewasset" onclick="assetsmenu(event)">Assets</button>
+
+        </div>
+        <div class = "menuitem" id = "menuitem">
+            <button id ="uploadmultiple">Upload File</button>
+            <button id = "singleentry">Add Assets</button>
+            
+        </div>
+        <div class = "assetmenuitem" id = "assetmenuitem">
+            <button id = "updateasset" onclick="window.location.href='manageassets.html'">View/Edit Assets</button>
+        </div>
+        <div class = "ifbody" id = "ifbody1">
+            <p style="margin: 10px;">Upload Assets Data File </p>
+            <input type = "file" id = "inputfile" name="file"/>
+            <button id = "uploadbutton" onclick="uploadinputfile()">Upload</button>
+            <p id = "result"></p>
+        </div>
+        <script src = "homepage.js"></script>
+        <script src = "uploadmultiple.js"></script>
+    </body>
+</html>

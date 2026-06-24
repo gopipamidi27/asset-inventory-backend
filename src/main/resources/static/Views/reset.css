@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.resetform {
+    display: flex;
+    flex-direction: column;
+}
+.resetpass{
+    display: flex;
+    width : 500px;
+    justify-content: space-between;
+    padding: 10px;
+}
+.resetpass input{
+    width: 300px;
+}
+button{
+    width: 100px;
+    height: 25px;
+}
+#resetstatus{
+    color: red;
+}

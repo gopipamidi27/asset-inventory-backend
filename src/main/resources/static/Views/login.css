@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid red;
+    
+}
+body{
+    /* background-image: url("welcome.jpg"); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logincont{
+    background-color: aliceblue;
+    position: fixed;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.userinfo{
+    display: flex;
+    padding: 10px;
+    width: 350px;
+    justify-content: space-between;
+}
+.loginbutton{
+    color: #007bff;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.loginbutton a {
+    text-decoration: none;
+}
+button{
+    background: none;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+#alertmessage{
+    color : red ;
+    font-size: 12px;
+    display: none;
+
+}

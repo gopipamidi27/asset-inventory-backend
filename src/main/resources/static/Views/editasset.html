@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Asset</title>
+        <link rel="stylesheet" href="editasset.css">
+    </head>
+    <body>
+        <div class = "userinfo" id = "userinfo">
+            <p id = "userdata">Welcome user</p>
+            <a href = "C:\Users\GOPI\Documents\workspace-spring-tools-for-eclipse\inventory-my project\AssetInventory\src\main\resources\static\index.html" class="logout">Logout</a>
+        </div>
+        <div class = "menu" id = "menu">
+            <button id = "addasset" onclick="menuitemview(event)">Add Asset Info</button>
+            <button id = "viewasset" onclick="assetsmenu(event)">Assets</button>
+
+        </div>
+        <div class = "menuitem" id = "menuitem">
+            <button id ="uploadmultiple">Upload File</button>
+            <button id = "singleentry">Add Assets</button>
+        </div>
+         <div class = "assetmenuitem" id = "assetmenuitem">
+            <button id = "updateasset" onclick="window.location.href='manageassets.html'">View/Edit Assets</button>
+        </div>
+        <div class="assetdetail" id="assetcont">
+            <p style="font-size: 25px;padding: 5px;font-weight: bolder;">Asset Information</p>
+            <div class = "assetcolumns">
+                <label>Employee ID</label>
+                <input type="text">
+            </div>
+            <span id = "alert">please enter emp id</span>
+            <div class = "assetcolumns">
+                <label>Employee Name</label>
+                <input type="text">
+            </div>
+            <div class = "assetcolumns">
+                <label>Department</label>
+                <input type="text">
+            </div>
+            <div class = "assetcolumns">
+                <label>Asset Tag</label>
+                <input type="text">
+            </div>
+            <span id = "alert1"></span>
+            <div class = "assetcolumns">
+                <label>Asset Type</label>
+                <input type="text">
+            </div>
+            <div class = "assetcolumns">
+                <label>Asset Model</label>
+                <input type="text">
+            </div>
+            <div class = "assetcolumns">
+                <label>Asset Serialnumber</label>
+                <input type="text">
+            </div>
+            <span id = "alert2"></span>
+            <div class = "assetcolumns">
+                <label>OS Information</label>
+                <input type="text">
+            </div>
+            <div class = "assetcolumns">
+                <label>Location</label>
+                <select id="location" class = "location">
+                    <option value="" disabled selected hidden>Select Location</option>
+                    <option value = "abraj">Abraj</option>
+                    <option value = "Promenade">Promenade</option>
+                    <option value = "WH19">WH19</option>
+                </select>
+            </div>
+            <span id = "alert3"></span>
+            <div class = "assetcolumns">
+                <label>Handover Form</label>
+                <label for = "infile" style="cursor: pointer;display: inline-block;" id = "hdf">Upload File</label>   
+                <input type="file" style="display: none;" id = "infile" />
+            </div>
+            <div class="assetbuttons">
+                <button id = "savedetails" onclick="savedata()">Save</button>
+                <button id = "reset" onclick="reset()">Reset</button>
+            </div>
+            <span id = "result"></span>
+        </div>
+        <script src="editasset.js"></script>
+        
+    </body>
+</html>

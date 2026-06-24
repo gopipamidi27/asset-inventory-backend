@@ -1,0 +1,41 @@
+.assetdetail{
+    display: flex;
+    height: 100vh;
+    width: 500px;
+    position: fixed;
+    top: 90px;
+    left: 16%;
+    margin-left : 25px;
+    flex-direction: column;
+}
+.assetcolumns{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.assetcolumns input,select{
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.assetbuttons  button{
+    background-color:  rgb(19, 108, 175);
+    color: white;
+    width: 125px;
+    margin: 5px 20px;
+    border: 1px solid  rgb(19, 108, 175);
+    border-radius: 10px;
+}
+.assetbuttons button:hover{
+    background-color: white ;
+    border: 1px solid  rgb(19, 108, 175);
+    color:  rgb(19, 108, 175);
+}
+.assetdetail span{
+    font-size: 13px;
+    color: red;
+    margin-left: auto;
+    margin-right: 10px;
+    width: 200px;
+}
