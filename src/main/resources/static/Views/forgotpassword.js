@@ -62,7 +62,7 @@ async function updatepassword(id,userdata) {
     const result = await res.text();
     rs.style.color = "green";
     rs.innerHTML = "Password Updated successfully! Redirecting...";
-    setTimeout(()=> {window.location.href = "login.html";}, 2000);
+    setTimeout(()=> {window.location.href = "C:\Users\GOPI\Documents\workspace-spring-tools-for-eclipse\inventory-my project\AssetInventory\src\main\resources\static\index.html";}, 2000);
     return;
 } catch(error){
     setTimeout(() => {rs.innerHTML = "Update failed"},3000);
