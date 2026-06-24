@@ -34,7 +34,7 @@ async function logincheck() {
     }
     else{
         localStorage.setItem(name,`${username}`);
-        window.location.href = "Views/homepage.html";
+        window.location.href = "homepage.html";
 
     }
 }
