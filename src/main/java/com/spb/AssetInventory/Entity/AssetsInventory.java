@@ -3,6 +3,7 @@ package com.spb.AssetInventory.Entity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
 import jakarta.persistence.Table;
 
 @Entity
