@@ -77,7 +77,7 @@ function showStatus(message, color) {
     }
     setTimeout(()=>{
         rs.style.display = "none";
-        windows.location.href = "homepage.html";
+        window.location.href = "homepage.html";
     },1000);
 }
 }

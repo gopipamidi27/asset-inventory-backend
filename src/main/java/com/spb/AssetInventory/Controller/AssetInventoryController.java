@@ -39,7 +39,7 @@ public class AssetInventoryController {
 	private AssetInventoyServices assetInventoryService;
 	@Autowired
 	private UserServices userServices ;
-	@CrossOrigin(origins = "http://127.0.0.1:5500")
+	//@CrossOrigin(origins = "http://127.0.0.1:5500")
 	@PostMapping("/savedetails/")
 	public ResponseEntity<?> Savedetails(@RequestParam String employee_id,
 										 @RequestParam String employee_name,
@@ -87,13 +87,13 @@ public class AssetInventoryController {
 //		assetInventoryService.uploadDetails(file);
 //		return ResponseEntity.ok("Details uploaded");
 //	}
-	@CrossOrigin(origins = "http://127.0.0.1:5500")
+//	@CrossOrigin(origins = "http://127.0.0.1:5500")
 	@GetMapping("/inventorylist/")
 	public ResponseEntity<?> inventorylist(){
 		List<AssetsInventory> assetsInventory = assetInventoryService.findAll();
 		return ResponseEntity.ok(assetsInventory);
 	}
-	@CrossOrigin(origins = "http://127.0.0.1:5500")
+//	@CrossOrigin(origins = "http://127.0.0.1:5500")
 	@GetMapping("/inventory/{id}")
 	public ResponseEntity<?> inventoryForID(@PathVariable String id){
 		AssetsInventory asset = assetInventoryService.findById(id);
@@ -103,7 +103,7 @@ public class AssetInventoryController {
 		
 		return ResponseEntity.ok(asset);
 	}
-	@CrossOrigin(origins = "http://127.0.0.1:5500")
+//	@CrossOrigin(origins = "http://127.0.0.1:5500")
 	@GetMapping("/user/{id}")
 	public ResponseEntity<?> username(@PathVariable String id){
 		Optional<Users> user = userServices.findById(id);
@@ -113,7 +113,7 @@ public class AssetInventoryController {
 		
 		return ResponseEntity.ok(user);
 	}
-	@CrossOrigin(origins = "http://127.0.0.1:5500")
+//	@CrossOrigin(origins = "http://127.0.0.1:5500")
 	@PutMapping("/updatedetails/{id}")
 	public ResponseEntity<?> updatedetails(@PathVariable String id,@RequestParam String employee_name,
 			@RequestParam String employee_department,
@@ -146,7 +146,7 @@ public class AssetInventoryController {
 		return ResponseEntity.ok("Details Updated");
 		
 	}
-	@CrossOrigin(origins = "http://127.0.0.1:5500")
+//	@CrossOrigin(origins = "http://127.0.0.1:5500")
 	@PatchMapping("updateuserdetails/{id}")
 	public ResponseEntity<?> updateuserdetails(@PathVariable String id, @RequestBody Users user){
 		Optional<Users> useroptional = userServices.findById(id);
@@ -161,7 +161,7 @@ public class AssetInventoryController {
 		userServices.save(user1);
 		return ResponseEntity.ok("user details updated");
 	}
-	@CrossOrigin(origins = "http://127.0.0.1:5500")
+//	@CrossOrigin(origins = "http://127.0.0.1:5500")
 	@GetMapping("/downloadinventorylist/")
 	public ResponseEntity<?> downloadinventorylist(){
 		byte[] assetslist = assetInventoryService.downloadAll();
@@ -188,7 +188,7 @@ public class AssetInventoryController {
 		List<AssetsInventory> assets = assetInventoryService.search(keyword);
 		return ResponseEntity.ok(assets);
 	}
-	@CrossOrigin(origins = "http://127.0.0.1:5500")
+//	@CrossOrigin(origins = "http://127.0.0.1:5500")
 	@PostMapping("/uploaddetails/")
 	public ResponseEntity<?> uploaddetails(@RequestParam("file") MultipartFile file) throws IOException, Exception{
 		if(!file.getOriginalFilename().endsWith(".xlsx")) {
