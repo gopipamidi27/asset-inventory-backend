@@ -78,6 +78,6 @@ function showStatus(message, color) {
     setTimeout(()=>{
         rs.style.display = "none";
         window.location.href = "homepage.html";
-    },1000);
+    },500);
 }
 }

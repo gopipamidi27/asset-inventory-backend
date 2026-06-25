@@ -7,7 +7,7 @@
     <body>
         <div class = "userinfo" id = "userinfo">
             <span id = "userdata">Welcome user</span>
-            <a href = "C:\Users\GOPI\Documents\workspace-spring-tools-for-eclipse\inventory-my project\AssetInventory\src\main\resources\static\index.html" class="logout">Logout</a>
+            <a href = "../index.html" class="logout">Logout</a>
         </div>
         <div class = "menu" id = "menu">
             <button id = "addasset" onclick="menuitemview(event)">Add Asset Info</button>
@@ -23,7 +23,7 @@
             <button id = "updateasset" onclick="window.location.href='manageassets.html'">View/Edit Assets</button>
         </div>
         <input type="search" class = "searching" id = "searching" placeholder="search...">
-        <a href = "http://localhost:8080/downloadinventorylist/" id = "export">Export</a>     
+        <a href = "/downloadinventorylist/" id = "export">Export</a>     
         <div class = "resultcontainer" id = "resultcontainer">
             <table class = "assetstable" id = "assetstable">
                 <thead>
