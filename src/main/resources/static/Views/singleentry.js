@@ -30,15 +30,15 @@ nodelist[9].addEventListener('focus',()=>{
 async function savedata(){
     if(nodelist[0].value == "")
         sempid.innerHTML = `Please enter Employee ID`;
-    if(nodelist[3].value == "")
+    else if(nodelist[3].value == "")
         sasttag.innerHTML = `Please enter AssetTag`;
-    if(nodelist[6].value == "")
+    else if(nodelist[6].value == "")
         sastsn.innerHTML = `Please enter Asset SerialNumber`;
-    if(nodelist[8].value == "")
+    else if(nodelist[8].value == "")
         sl.innerHTML = `Please select Location`;
-    if(nodelist[9].value == "")
+    else if(nodelist[9].value == "")
         shf.innerHTML = `Please select HandoverForm`;
-    
+    else{
     const formdata = new FormData();
     const inputfile = document.getElementById("infile");
     formdata.append("employee_id", nodelist[0].value);
@@ -66,6 +66,7 @@ async function savedata(){
     }    
 }catch(error){
     rs.innerHTML = "Failed";
+}
 }
 reset();
 function showStatus(message, color) {
