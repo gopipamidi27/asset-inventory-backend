@@ -104,7 +104,7 @@ public class AssetInventoryController {
 		return ResponseEntity.ok(asset);
 	}
 	@PostMapping("/saveuser/")
-	public ResponseEntity<?> saveuser(@RequestBody User user){
+	public ResponseEntity<?> saveuser(@RequestBody Users user){
 		userServices.save(user);
 		return ResponseEntity.ok("user created successfully");
 	}
