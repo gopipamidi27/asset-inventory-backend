@@ -5,6 +5,7 @@ const assetsmenuitem = document.getElementById("assetmenuitem");
 const uploadfile = document.getElementById("uploadmultiple");
 const addasset = document.getElementById("singleentry");
 const updateasset = document.getElementById("updateasset");
+const status = document.getElementById("status");
 const items = document.querySelectorAll('#userinformation input, #userinformation select');
 uploadfile.addEventListener('click',()=>{
     window.location.href = "uploadmultiple.html";
@@ -50,11 +51,13 @@ async function saveuser(){
         body: formdata
     });
     const result = await res.text();
-    if(result === "user created successfully")
-        console.log("user created");
+    if(result === "user created successfully"){
+        status.style.color = "green";
+        status.innerHTML = "user created";
+    }
     else
-        console.log("user creation failed");
+        status.innerHTML = "user creation failed";
 }catch(error){
-        console.log("failed");
+        status.innerHTML = "failed";
 }
 }
