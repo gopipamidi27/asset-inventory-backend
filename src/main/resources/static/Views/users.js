@@ -14,7 +14,11 @@ function resultdata(result){
        row.innerHTML=` <td>${element.employee_id}</td>
         <td>${element.employee_name}</td>
         <td>${element.userrole}</td>
+        <td><button id = "edit" onclick = "edituser('${element.employee_id}')">Edit</button></td>
         `;
         user.appendChild(row);
     });
+}
+function edituser(id){
+    window.location.href = `adduser.html?id=${id}`;
 }
