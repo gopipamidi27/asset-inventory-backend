@@ -1,7 +1,7 @@
 const user = document.getElementById("tbody");
 viewusers();
 let result = "";
-async function viewusers{
+async function viewusers(){
     const res = await fetch("/userslist/");
     result = await res.json();
     resultdata(result);
