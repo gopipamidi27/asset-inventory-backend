@@ -7,6 +7,7 @@ const addasset = document.getElementById("singleentry");
 const updateasset = document.getElementById("updateasset");
 const tdata = document.getElementById("tabledata");
 const searchkeyword = document.getElementById("searching");
+const userrole = `${localStorage.getItem('role')}`;
 const menu1 = document.getElementById("addasset");
 const menu3 = document.getElementById("Users");
 if(userrole === 'user'){
