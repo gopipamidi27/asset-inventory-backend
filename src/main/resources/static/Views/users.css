@@ -34,9 +34,9 @@ tr{
     border: 1px solid rgb(119, 210, 119);
     border-radius: 10px;
 }
-#edit :hover{
+#edit:hover{
     background-color: white;
-    color: rgb(119, 210, 119);
+    color: rgb(7, 210, 7);
 }
 #newuser{
     position: fixed;
@@ -48,4 +48,8 @@ tr{
     border-radius: 10px;
     width: 100px;
     height: 25px;
+}
+#newuser:hover{
+    background-color: white;
+    color: rgb(19, 108, 175);
 }

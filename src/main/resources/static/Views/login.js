@@ -33,9 +33,9 @@ async function logincheck() {
         
     }
     else{
-        localStorage.setItem(name,`${username}`);
+        localStorage.setItem('name',username);
+        localStorage.setItem('role',data.userrole);
         window.location.href = "/Views/homepage.html";
-
     }
 }
 function message (errmsg,user){

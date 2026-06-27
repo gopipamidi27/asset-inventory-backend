@@ -150,9 +150,9 @@ tr{
 }
 #edit{
     width: 75px;
-    height: 20px;
+    height: 25px;
     color: white;
-    background-color: rgb(119, 210, 119);
+    background-color:  rgb(119, 210, 119);
     border: rgb(119, 210, 119);
     border-radius: 10px;
     padding: 3px;
@@ -160,5 +160,5 @@ tr{
 }
 #edit:hover{
     background-color: white;
-    color: rgb(119, 210, 119);
+    color: rgb(7, 210, 7);
 }

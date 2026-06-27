@@ -1,10 +1,12 @@
 const username = document.getElementById("userdata");
-username.innerHTML = `Welcome ${localStorage.getItem(name)}`;
+username.innerHTML = `Welcome ${localStorage.getItem('name')}`;
 const menuitem1 = document.getElementById("menuitem");
 const assetsmenuitem = document.getElementById("assetmenuitem");
 const uploadfile = document.getElementById("uploadmultiple");
 const addasset = document.getElementById("singleentry");
 const updateasset = document.getElementById("updateasset");
+const userrole = `${localStorage.getItem('role')}`;
+console.log(`${userrole}`);
 uploadfile.addEventListener('click',()=>{
     window.location.href = "uploadmultiple.html";
     menuitem1.style.display = "none";
