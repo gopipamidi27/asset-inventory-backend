@@ -11,7 +11,7 @@
 }
 .usertable{
     border: 1px solid black;
-    width: 500px;
+    width: 600px;
     border-collapse: collapse;
     
 }
@@ -37,4 +37,15 @@ tr{
 #edit :hover{
     background-color: white;
     color: rgb(119, 210, 119);
+}
+#newuser{
+    position: fixed;
+    top : 80px;
+    right : 10%;
+    background-color: rgb(19, 108, 175);
+    color: white;
+    border: 1px solid rgb(19, 108, 175);
+    border-radius: 10px;
+    width: 100px;
+    height: 25px;
 }
