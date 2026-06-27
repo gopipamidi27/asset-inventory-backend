@@ -3,11 +3,11 @@
     left : 15%;
     top : 90px;
     margin: 20px 30px;
-    width: 500px;
+    width: 600px;
     overflow-x: auto;
     height: auto;
     border: 1px solid rgb(209, 201, 201);
-    padding-bottom: 150px;
+    padding-bottom: 15px;
 }
 .usertable{
     border: 1px solid black;

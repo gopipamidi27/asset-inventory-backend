@@ -11,9 +11,9 @@ function resultdata(result){
     result.forEach(element => {
         const row = document.createElement('tr');
         row.id = `row-${element.employee_id}`;
-       row.innerHTML=` <td>element.employee_id</td>
-        <td>element.employee_name</td>
-        <td>element.userrole</td>
+       row.innerHTML=` <td>${element.employee_id}</td>
+        <td>${element.employee_name}</td>
+        <td>${element.userrole}</td>
         `;
         user.appendChild(row);
     });
