@@ -7,6 +7,20 @@ const addasset = document.getElementById("singleentry");
 const updateasset = document.getElementById("updateasset");
 const status = document.getElementById("status");
 const items = document.querySelectorAll('#userinformation input, #userinformation select');
+const url = window.location.search;
+const urlparam = new URLSearchParams(url);
+const uid = urlparam.get('id');
+if(uid != null){
+    edit(uid);
+}
+async function edit(uid){
+    const res = await fetch(`/user/${uid}`);
+    const result = await res.json();
+    items[0].value = result.employee_id;
+    items[0].disabled = true;
+    items[1].value = result.employee_name;
+    items[4].value = result.userrole;
+}
 uploadfile.addEventListener('click',()=>{
     window.location.href = "uploadmultiple.html";
     menuitem1.style.display = "none";

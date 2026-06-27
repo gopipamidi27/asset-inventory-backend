@@ -152,11 +152,13 @@ tr{
     width: 75px;
     height: 20px;
     color: white;
-    background-color: yellowgreen;
+    background-color: rgb(119, 210, 119);
+    border: rgb(119, 210, 119);
     border-radius: 10px;
     padding: 3px;
 
 }
 #edit:hover{
-    background-color: green;
+    background-color: white;
+    color: rgb(119, 210, 119);
 }
