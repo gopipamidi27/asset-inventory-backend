@@ -81,7 +81,7 @@ function resultdata(result){
         <td>${ele.location || ""}</td>
         <td>${hf}</td>
         ${userrole === 'admin' || userrole === 'master' ?
-            <td><button class = "edit" onclick = "editasset('${ele.assettag}')">Edit</button></td>: ''}
+            `<td><button class = "edit" onclick = "editasset('${ele.assettag}')">Edit</button></td>`: ''}
         `;
         tdata.appendChild(row);
     });  
