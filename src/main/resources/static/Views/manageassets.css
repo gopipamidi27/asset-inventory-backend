@@ -148,9 +148,9 @@ tr{
     height: 50px;
     border-bottom: 1px solid  rgb(19, 108, 175);
 }
-#edit{
+.edit{
     width: 75px;
-    height: 25px;
+    height: 30px;
     color: white;
     background-color:  rgb(119, 210, 119);
     border: rgb(119, 210, 119);
@@ -158,7 +158,7 @@ tr{
     padding: 3px;
 
 }
-#edit:hover{
+.edit:hover{
     background-color: white;
     color: rgb(7, 210, 7);
 }
