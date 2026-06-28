@@ -145,11 +145,13 @@ th{
 tr{
     text-align: center;
     height: 50px;
+    border-left: 0.5px dotted rgb(19, 108, 175);
+    border-right: 0.5px dotted rgb(19, 108, 175);
     border-bottom: 1px solid  rgb(19, 108, 175);
 }
-tr:hover{
+/* tr:hover{
     background-color: rgb(116, 113, 113);
-}
+} */
 .edit{
     width: 75px;
     height: 30px;
