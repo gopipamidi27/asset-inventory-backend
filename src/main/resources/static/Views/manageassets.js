@@ -16,7 +16,7 @@ if(userrole === 'user'){
 
 }
 if(userrole === 'admin'){
-    menu3.style.display = 'none';
+    menu3?.style.display = 'none';
 }
 assets();
 uploadfile.addEventListener('click',()=>{
