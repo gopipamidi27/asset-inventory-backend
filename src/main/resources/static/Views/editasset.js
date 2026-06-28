@@ -129,7 +129,10 @@ function savedata(){
         sl.style.display = "inline-block";
         sl.innerHTML = "Please enter location";
     }
-    
+    if(nodelist[9].value == ""){
+        sl.style.display = "inline-block";
+        sl.innerHTML = "Please upload HandoverForm";
+    }
     formdata.append("employee_id",nodelist[0].value);
     formdata.append("employee_name",nodelist[1].value);
     formdata.append("employee_department",nodelist[2].value);
