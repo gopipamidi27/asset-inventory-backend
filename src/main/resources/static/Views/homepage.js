@@ -5,16 +5,16 @@ const assetsmenuitem = document.getElementById("assetmenuitem");
 const uploadfile = document.getElementById("uploadmultiple");
 const addasset = document.getElementById("singleentry");
 const updateasset = document.getElementById("updateasset");
-const userrole = `${localStorage.getItem('role')}`;
+const userrole = localStorage.getItem('role');
 const menu1 = document.getElementById("addasset");
 const menu3 = document.getElementById("Users");
 if(userrole === 'user'){
-    menu1?.style.display = 'none';
-    menu3?.style.display = 'none';
+    menu1?.style.setProperty('display','none');
+    menu3?.style.setProperty('display','none');
 
 }
 if(userrole === 'admin'){
-    menu3?.style.display = 'none';
+    menu3?.style.setProperty('display','none');
 }
 uploadfile.addEventListener('click',()=>{
     window.location.href = "uploadmultiple.html";

@@ -1,5 +1,5 @@
 const username = document.getElementById("userdata");
-username.innerHTML = `Welcome ${localStorage.getItem(name)}`;
+username.innerHTML = `Welcome ${localStorage.getItem('name')}`;
 const menuitem1 = document.getElementById("menuitem");
 const assetsmenuitem = document.getElementById("assetmenuitem");
 const uploadfile = document.getElementById("uploadmultiple");

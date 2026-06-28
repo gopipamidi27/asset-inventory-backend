@@ -19,16 +19,16 @@ const urlparam = new URLSearchParams(urlstr);
 const assttag = urlparam.get('id');
 const username = document.getElementById("userdata");
 username.innerHTML = `Welcome ${localStorage.getItem('name')}`;
-const userrole = `${localStorage.getItem('role')}`;
+const userrole = localStorage.getItem('role');
 const menu1 = document.getElementById("addasset");
 const menu3 = document.getElementById("Users");
 if(userrole === 'user'){
-    menu1?.style.display = 'none';
-    menu3?.style.display = 'none';
+    menu1?.style.setProperty('display','none');
+    menu3?.style.setProperty('display','none');
 
 }
 if(userrole === 'admin'){
-    menu3?.style.display = 'none';
+    menu3?.style.setProperty('display','none');
 }
 
 

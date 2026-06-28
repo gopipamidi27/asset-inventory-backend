@@ -7,16 +7,16 @@ const addasset = document.getElementById("singleentry");
 const updateasset = document.getElementById("updateasset");
 const tdata = document.getElementById("tabledata");
 const searchkeyword = document.getElementById("searching");
-const userrole = `${localStorage.getItem('role')}`;
+const userrole = localStorage.getItem('role');
 const menu1 = document.getElementById("addasset");
 const menu3 = document.getElementById("Users");
 if(userrole === 'user'){
-    menu1?.style.display = 'none';
-    menu3?.style.display = 'none';
+    menu1?.style.setProperty('display','none');
+    menu3?.style.setProperty('display','none');
 
 }
 if(userrole === 'admin'){
-    menu3?.style.display = 'none';
+    menu3?.style.setProperty('display','none');
 }
 assets();
 uploadfile.addEventListener('click',()=>{
