@@ -26,6 +26,7 @@
         <input type="search" class = "searching" id = "searching" placeholder="search...">
         <a href = "/downloadinventorylist/" id = "export">Export</a>     
         <div class = "resultcontainer" id = "resultcontainer">
+
             <table class = "assetstable" id = "assetstable">
                 <thead>
                     <tr>
@@ -42,7 +43,16 @@
                         <th>Actions</th>
                     </tr>
                 </thead>
-                <tbody id = "tabledata"></tbody>
+
+                <tbody id = "tabledata">
+                    <!-- new line start -->
+                    <tr id="loading" style="display: none;">
+                        <td colspan="11" style="text-align: center; color: rgb(19, 108, 175); font-weight: bold; padding: 20px;">
+                            Loading asset data, please wait...
+                        </td>
+                    </tr>
+                    <!-- END -->
+                </tbody>
             </table>
         </div>
         <script src = "manageassets.js"></script>
